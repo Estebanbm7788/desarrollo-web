@@ -4,44 +4,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bienvenidos - Deportes, Boxeo y MMA</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            display: inline-block;
+            margin: 10px;
+        }
+        img {
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+        img:hover {
+            transform: scale(1.1);
+        }
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background: white;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        th {
+            background: #333;
+            color: white;
+        }
+    </style>
 </head>
 <body>
     <h1>Bienvenidos a la Página de Deportes</h1>
-    <p>Explora contenido sobre el mundo del deporte, incluyendo boxeo y MMA.</p>
+    <p>Explora el contenido sobre el mundo del boxeo y MMA.</p>
     
     <h2>Enlaces a Deportes</h2>
     <ul>
         <li>
             <a href="https://www.espn.com/boxing/" target="_blank">
-                <img src="images/boxeo.jpg" alt="Boxeo" width="50"> Boxeo
+                <img src="images/boxeo.jpg" alt="Boxeo" width="100"><br>Boxeo
             </a>
         </li>
         <li>
             <a href="https://www.ufc.com" target="_blank">
-                <img src="images/mma.jpg" alt="MMA" width="50"> MMA
+                <img src="images/mma.jpg" alt="MMA" width="100"><br>MMA
             </a>
         </li>
         <li>
             <a href="https://www.fifa.com" target="_blank">
-                <img src="images/futbol.jpg" alt="Fútbol" width="50"> Fútbol
+                <img src="images/futbol.jpg" alt="Fútbol" width="100"><br>Fútbol
             </a>
         </li>
     </ul>
     
     <h2>Galería de Imágenes</h2>
     <a href="https://www.ufc.com" target="_blank">
-        <img src="images/mma.jpg" alt="Pelea de MMA" width="200">
+        <img src="images/mma.jpg" alt="Pelea de MMA" width="300">
     </a>
     <a href="https://www.espn.com/boxing/" target="_blank">
-        <img src="images/boxeo.jpg" alt="Combate de Boxeo" width="200">
+        <img src="images/boxeo.jpg" alt="Combate de Boxeo" width="300">
     </a>
     
     <h2>Videos</h2>
-    <video width="320" height="240" controls>
+    <video width="480" height="270" controls>
         <source src="videos/mma_highlights.mp4" type="video/mp4">
         Tu navegador no soporta el video.
     </video>
-    <video width="320" height="240" controls>
+    <video width="480" height="270" controls>
         <source src="videos/boxeo_highlights.mp4" type="video/mp4">
         Tu navegador no soporta el video.
     </video>
@@ -56,7 +97,7 @@
     </form>
     
     <h2>Tabla de Deportistas Destacados</h2>
-    <table border="1">
+    <table>
         <tr>
             <th>Nombre</th>
             <th>Deporte</th>
@@ -69,3 +110,14 @@
                 </a>
             </td>
         </tr>
+        <tr>
+            <td>Conor McGregor</td>
+            <td>
+                <a href="https://www.ufc.com" target="_blank">
+                    <img src="images/mma.jpg" alt="MMA" width="50"> MMA
+                </a>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
