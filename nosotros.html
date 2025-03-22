@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boxeo y MMA</title>
+    <title>Nosotros - Boxeo y MMA</title>
     <link rel="stylesheet" href="styles.css">
     <style>
         body {
@@ -40,34 +40,9 @@
             float: left;
             height: 100vh;
         }
-        aside ul {
-            list-style: none;
-            padding: 0;
-        }
-        aside ul li {
-            margin-bottom: 10px;
-        }
-        aside ul li a {
-            text-decoration: none;
-            color: white;
-            font-weight: bold;
-            display: block;
-            padding: 5px;
-            background-color: #444;
-            border-radius: 5px;
-        }
-        aside ul li a:hover {
-            background-color: #d32f2f;
-        }
         main {
             margin-left: 220px;
             padding: 20px;
-        }
-        section {
-            margin-bottom: 50px;
-            padding: 20px;
-            background-color: #222;
-            border-radius: 10px;
         }
         footer {
             background-color: #d32f2f;
@@ -76,18 +51,26 @@
             position: relative;
             width: 100%;
         }
-        img {
+        .responsive-img {
             width: 100%;
-            max-width: 500px;
+            max-width: 600px;
+            height: auto;
             border-radius: 10px;
-            display: block;
-            margin: auto;
+        }
+        figure {
+            text-align: center;
+            margin: 20px 0;
+        }
+        figcaption {
+            margin-top: 5px;
+            font-size: 18px;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Bienvenido a Boxeo y MMA</h1>
+        <h1>Sobre Nosotros</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
@@ -103,36 +86,30 @@
             </ul>
         </nav>
     </header>
-
     <aside>
-        <h2>Categorías</h2>
-        <ul>
-            <li><a href="#boxeo">Boxeo Profesional</a></li>
-            <li><a href="#mma">MMA</a></li>
-            <li><a href="#entrenamiento">Entrenamiento</a></li>
-        </ul>
+        <h2>Nuestra Historia</h2>
+        <p>Conoce cómo nació nuestra pasión por el Boxeo y MMA.</p>
     </aside>
-
     <main>
-        <section id="boxeo">
-            <h2>Boxeo Profesional</h2>
-            <p>Explora el mundo del boxeo profesional, conoce las peleas más esperadas y sigue a tus peleadores favoritos.</p>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Boxing_scene_1890s.jpg/800px-Boxing_scene_1890s.jpg" alt="Boxeo Profesional">
-        </section>
-
-        <section id="mma">
-            <h2>MMA</h2>
-            <p>Las Artes Marciales Mixtas combinan varias disciplinas de combate. Descubre eventos, técnicas y luchadores destacados.</p>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/MMA_Competition.jpg/800px-MMA_Competition.jpg" alt="MMA">
-        </section>
-
-        <section id="entrenamiento">
-            <h2>Entrenamiento</h2>
-            <p>Aprende sobre técnicas de entrenamiento, rutinas de ejercicios y estrategias para mejorar tu rendimiento en el ring o jaula.</p>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/5/52/Boxing_training.jpg" alt="Entrenamiento">
+        <section>
+            <h2>Quiénes Somos</h2>
+            <p>Somos un equipo apasionado por los deportes de combate, dedicados a informar y promover el boxeo y las artes marciales mixtas en todo el mundo.</p>
+            <h2>Nuestra Misión</h2>
+            <p>Brindar contenido de calidad sobre los peleadores, eventos y entrenamientos más destacados, inspirando a la próxima generación de luchadores.</p>
+            
+            <figure>
+                <img src="https://www.shutterstock.com/image-photo/box-fighters-trainning-outdoor-mixed-260nw-466563128.jpg" 
+                     alt="Pelea de Boxeo y MMA" class="responsive-img">
+                <figcaption>Pelea de Boxeo y MMA</figcaption>
+            </figure>
+            
+            <figure>
+                <img src="https://img.freepik.com/foto-gratis/boxeador-masculino-saco-boxeo_155003-6125.jpg" 
+                     alt="Peleador de MMA entrenando" class="responsive-img">
+                <figcaption>Peleador de MMA entrenando</figcaption>
+            </figure>
         </section>
     </main>
-
     <footer>
         <p>&copy; 2025 Boxeo y MMA</p>
     </footer>

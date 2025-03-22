@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soporte</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #111;
+            color: white;
+            text-align: center;
+        }
+        header {
+            background-color: #d32f2f;
+            padding: 20px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #222;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+        main {
+            padding: 20px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .support-form {
+            background-color: #222;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: left;
+        }
+        .support-form label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+            color: #ffcc00;
+        }
+        .support-form input, .support-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: none;
+            border-radius: 5px;
+            background-color: #333;
+            color: white;
+        }
+        .support-form button {
+            margin-top: 15px;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            background-color: #ffcc00;
+            color: black;
+            font-weight: bold;
+            cursor: pointer;
+            width: 100%;
+        }
+        .support-form button:hover {
+            background-color: #ffaa00;
+        }
+        .message {
+            display: none;
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #28a745;
+            color: white;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .social-links {
+            margin-top: 20px;
+        }
+        .social-links a {
+            margin: 0 10px;
+            color: #ffcc00;
+            font-size: 24px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Soporte</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="eventos.html">Eventos</a></li>
+                <li><a href="peleadores.html">Peleadores</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="testimonios.html">Testimonios</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="registro.html">Registro</a></li>
+                <li><a href="soporte.html">Soporte</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>¿Necesitas ayuda?</h2>
+        <p>Envíanos tu consulta y te responderemos lo antes posible.</p>
+        <div class="support-form">
+            <form id="supportForm">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+
+        <div class="message" id="message">
+            ¡Gracias por contactarnos! Te responderemos pronto.
+        </div>
+
+        <div class="social-links">
+            <p>Síguenos en nuestras redes sociales:</p>
+            <a href="https://www.facebook.com" target="_blank">📘 Facebook</a>
+            <a href="https://www.twitter.com" target="_blank">🐦 Twitter</a>
+            <a href="https://www.instagram.com" target="_blank">📸 Instagram</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Boxeo y MMA</p>
+    </footer>
+
+    <script>
+        document.getElementById("supportForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            document.getElementById("message").style.display = "block";
+            document.getElementById("supportForm").reset();
+        });
+    </script>
+</body>
+</html>

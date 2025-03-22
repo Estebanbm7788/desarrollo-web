@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boxeo y MMA</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Eventos - Boxeo y MMA</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -41,33 +40,20 @@
             height: 100vh;
         }
         aside ul {
-            list-style: none;
             padding: 0;
         }
         aside ul li {
+            list-style: none;
             margin-bottom: 10px;
         }
         aside ul li a {
             text-decoration: none;
             color: white;
             font-weight: bold;
-            display: block;
-            padding: 5px;
-            background-color: #444;
-            border-radius: 5px;
-        }
-        aside ul li a:hover {
-            background-color: #d32f2f;
         }
         main {
             margin-left: 220px;
             padding: 20px;
-        }
-        section {
-            margin-bottom: 50px;
-            padding: 20px;
-            background-color: #222;
-            border-radius: 10px;
         }
         footer {
             background-color: #d32f2f;
@@ -76,18 +62,20 @@
             position: relative;
             width: 100%;
         }
-        img {
+        .event-container {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .event-container img {
             width: 100%;
             max-width: 500px;
             border-radius: 10px;
-            display: block;
-            margin: auto;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Bienvenido a Boxeo y MMA</h1>
+        <h1>Eventos de Boxeo y MMA</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
@@ -107,29 +95,35 @@
     <aside>
         <h2>Categorías</h2>
         <ul>
-            <li><a href="#boxeo">Boxeo Profesional</a></li>
-            <li><a href="#mma">MMA</a></li>
-            <li><a href="#entrenamiento">Entrenamiento</a></li>
+            <li><a href="#eventos-boxeo">Eventos de Boxeo</a></li>
+            <li><a href="#eventos-mma">Eventos de MMA</a></li>
+            <li><a href="#torneos">Próximos Torneos</a></li>
         </ul>
     </aside>
 
     <main>
-        <section id="boxeo">
-            <h2>Boxeo Profesional</h2>
-            <p>Explora el mundo del boxeo profesional, conoce las peleas más esperadas y sigue a tus peleadores favoritos.</p>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Boxing_scene_1890s.jpg/800px-Boxing_scene_1890s.jpg" alt="Boxeo Profesional">
+        <section id="eventos-mma">
+            <h2>Eventos de MMA</h2>
+            <div class="event-container">
+                <img src="https://scontent.feoh1-1.fna.fbcdn.net/v/t39.30808-6/332857497_6635693133141443_6441741107461556682_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=0b6b33&_nc_ohc=5Z__3l6GZ40Q7kNvgGwIhMi&_nc_oc=AdmG_uw_bMzd7f9_aNASss0cIwpAHGPBmT8ly4GL2PZi1rXe90aIVoTmnJrjudEdCdsq9E-ovhVTIzHffWSa1Xp2&_nc_zt=23&_nc_ht=scontent.feoh1-1.fna&_nc_gid=C56gFz-LPj_hgxZRk6L4hw&oh=00_AYEqqD9kb751YGp3MflU9H1Qch01Esl47X-AWfOqh2aQ-w&oe=67E4F6A8" alt="Eventos de MMA">
+                <p>Calendario de los próximos eventos de UFC y otras ligas de MMA.</p>
+            </div>
         </section>
 
-        <section id="mma">
-            <h2>MMA</h2>
-            <p>Las Artes Marciales Mixtas combinan varias disciplinas de combate. Descubre eventos, técnicas y luchadores destacados.</p>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/MMA_Competition.jpg/800px-MMA_Competition.jpg" alt="MMA">
+        <section id="eventos-boxeo">
+            <h2>Eventos de Boxeo</h2>
+            <div class="event-container">
+                <img src="https://fotografias.lasexta.com/clipping/cmsimages01/2025/03/11/92C6100E-8923-4785-9884-BE0B7135A202/cartel-velada-ano-quinta-edicion-evento-boxeo-ibai-llanos_167.jpg?crop=683,384,x0,y78&width=1266&height=712&optimize=low&format=webply" alt="Eventos de Boxeo">
+                <p>Descubre las mejores peleas de boxeo y torneos internacionales.</p>
+            </div>
         </section>
 
-        <section id="entrenamiento">
-            <h2>Entrenamiento</h2>
-            <p>Aprende sobre técnicas de entrenamiento, rutinas de ejercicios y estrategias para mejorar tu rendimiento en el ring o jaula.</p>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/5/52/Boxing_training.jpg" alt="Entrenamiento">
+        <section id="torneos">
+            <h2>Próximos Torneos</h2>
+            <div class="event-container">
+                <img src="https://www.xmma.es/wp-content/uploads/2023/09/Torneo-Internacional-de-Boxeo.jpg" alt="Torneos">
+                <p>Información sobre los próximos torneos nacionales e internacionales.</p>
+            </div>
         </section>
     </main>
 

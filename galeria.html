@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería - Boxeo y MMA</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #111;
+            color: white;
+            text-align: center;
+        }
+        header {
+            background-color: #d32f2f;
+            padding: 20px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #222;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+        main {
+            padding: 20px;
+        }
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+            text-align: center;
+        }
+        .gallery-item {
+            background-color: #222;
+            padding: 10px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+        .gallery-item img:hover {
+            transform: scale(1.05);
+        }
+        .gallery-item p {
+            margin-top: 8px;
+            font-weight: bold;
+            color: #ffcc00;
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+        }
+        .modal img {
+            max-width: 90%;
+            max-height: 80%;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Galería de Boxeo y MMA</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="eventos.html">Eventos</a></li>
+                <li><a href="peleadores.html">Peleadores</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="testimonios.html">Testimonios</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="registro.html">Registro</a></li>
+                <li><a href="soporte.html">Soporte</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Explora Nuestra Galería</h2>
+        <div class="gallery-container">
+            <div class="gallery-item" onclick="openModal(this)">
+                <img src="https://imagenes.20minutos.es/files/image_1920_1080/uploads/imagenes/2023/12/29/ilia-topuria.jpeg" alt="Pelea de MMA">
+                <p>Pelea de MMA</p>
+            </div>
+            <div class="gallery-item" onclick="openModal(this)">
+                <img src="https://phantom-marca.unidadeditorial.es/bef44b94e0d0e52b5dae04129875a0b4/crop/31x26/738x423/resize/828/f/jpg/assets/multimedia/imagenes/2022/03/15/16473416900552.jpg" alt="Boxeador entrenando">
+                <p>Boxeador entrenando</p>
+            </div>
+            <div class="gallery-item" onclick="openModal(this)">
+                <img src="https://s1.abcstatics.com/abc/www/multimedia/deportes/2025/02/06/du-plessis-ufc-Rs2ZXcBy0nDZSd2asQQ9b3O-1200x840@diario_abc.jpg" alt="Lucha en UFC">
+                <p>Lucha en UFC</p>
+            </div>
+            <div class="gallery-item" onclick="openModal(this)">
+                <img src="https://cdn.diariodeavisos.com/wp-content/uploads/2022/11/RS689691_fp-Moi-Rui-03-1024x683.jpg" alt="Entrenamiento de peleadores">
+                <p>Entrenamiento de peleadores</p>
+            </div>
+            <div class="gallery-item" onclick="openModal(this)">
+                <img src="https://ca-times.brightspotcdn.com/dims4/default/5b32f11/2147483647/strip/true/crop/5807x3871+0+0/resize/1200x800!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Fb4%2F34%2F9dc789443e90c4ffbeb0b32bda58%2Ffb57759c3ccc4ef3b983e7b0bee9f3ef" alt="Evento de Boxeo">
+                <p>Evento de Boxeo</p>
+            </div>
+        </div>
+    </main>
+    <div class="modal" id="modal" onclick="closeModal()">
+        <img id="modal-img">
+    </div>
+    <script>
+        function openModal(element) {
+            document.getElementById("modal-img").src = element.querySelector("img").src;
+            document.getElementById("modal").style.display = "flex";
+        }
+        function closeModal() {
+            document.getElementById("modal").style.display = "none";
+        }
+    </script>
+    <footer>
+        <p>&copy; 2025 Boxeo y MMA</p>
+    </footer>
+</body>
+</html>
